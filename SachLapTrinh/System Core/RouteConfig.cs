@@ -10,7 +10,7 @@ namespace SachLapTrinh.System_Core
     {
         public static void RegisterRouters(RouteCollection routes)
         {
-
+            
         }
     }
 }

@@ -97,6 +97,7 @@
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -113,8 +114,15 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data Access Layer\BaseDataAccess.cs" />
+    <Compile Include="Data Access Layer\BookDAO.cs" />
+    <Compile Include="Data Access Layer\DBUltilities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="System Core\RouteConfig.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Business Logic Layer\" />
+    <Folder Include="Presentation Layer\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
