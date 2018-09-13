@@ -42,3 +42,10 @@ BEGIN
 END
 GO
 -- =============================================
+
+Create table [User] (
+	UserID char(10) not null primary key,
+	UserName varchar(100) not null,
+	UserPassword varchar(500) not null
+);
+alter table [dbo].[User] alter column UserPass varchar(100) not null
