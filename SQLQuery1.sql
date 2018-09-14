@@ -48,4 +48,11 @@ Create table [User] (
 	UserName varchar(100) not null,
 	UserPassword varchar(500) not null
 );
-alter table [dbo].[User] alter column UserPass varchar(100) not null
+
+alter table [Book] add ImagePath varchar(500);
+alter table [Book] add CreateTime datetime;
+alter table [Book] drop column UpdateTiem;
+alter table [Book] add UpdateTime datetime;
+alter table [Book] alter column Year varchar(10);
+
+alter table [User] add CreateTime datetime;
